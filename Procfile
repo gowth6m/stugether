@@ -1,1 +1,1 @@
-web: gunicorn gamma.wsgi
+web: gunicorn stugether.wsgi
