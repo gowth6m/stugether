@@ -52,9 +52,9 @@ urlpatterns = [
 
     # Profile
     path('profile/edit', edit_profile_page, name='edit-profile'),
-    path('<slug:username>/profile/', profile_page, name='profile_view'),
-    path('<slug:username>/following-topics/', profile_following_topics_page, name='following-topics'),
-    path('<slug:username>/friends/', friends_page, name='friends'),
+    path('<username>/profile/', profile_page, name='profile_view'),
+    path('<username>/following-topics/', profile_following_topics_page, name='following-topics'),
+    path('<username>/friends/', friends_page, name='friends'),
 
     # Notifications
     path('notifications/', notifications, name='notifications'),
